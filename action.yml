@@ -1,0 +1,23 @@
+name: "awesome-lint"
+description: "Lint your READMEs with sindresorhus' awesome-lint"
+author: "James Hegedus <james@jthegedus.com>
+branding:
+  icon: "eye"
+  color: "green"
+
+inputs:
+  version:
+    description: "awesome-lint package version you wish to use"
+    required: false
+    default: "latest"
+  filename:
+    description: "Name of file you wish to lint"
+    required: false
+    default: "README.md"
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.filename }}
+  env:
+    VERSION: ${{ inputs.version }}
