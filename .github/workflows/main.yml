@@ -9,7 +9,7 @@ jobs:
       id: hello
       uses: jthegedus/github-action-docker-build-vars-test@master
       with:
-        who-to-greet: 'Mona the Octocat'
+        who-to-greet: 'SOMEONE'
     # Use the output from the `hello` step
     - name: Get the output time
       run: echo "The time was ${{ steps.hello.outputs.time }}"
