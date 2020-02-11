@@ -2,6 +2,7 @@
 
 set -euo pipefail
 
-npm install -g awesome-lint@${INPUT_VERSION:-master}
+echo "version: +${VERSION}+"
+npm install -g awesome-lint@${INPUT_VERSION:-latest}
 
 sh -c "awesome-lint $*"
