@@ -12,6 +12,10 @@ jobs:
         uses: ./
         with:
           filname: "examples/README.md"
+  test2:
+    runs-on: ubuntu-latest
+    name: Test awesome-lint GitHub Action w custom awesome-lint version 
+    steps:
       - name: Test custom awesome-lint version
         id: custom-action-test
         uses: ./
