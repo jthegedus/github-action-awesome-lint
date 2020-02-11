@@ -1,15 +1,10 @@
 on: [push]
 
 jobs:
-  hello_world_job:
+  test:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: Test awesome-lint GitHub Action
     steps:
-    - name: Hello world action step
-      id: hello
-      uses: jthegedus/github-action-docker-build-vars-test@master
-      with:
-        who-to-greet: 'SOMEONE'
-    # Use the output from the `hello` step
-    - name: Get the output time
-      run: echo "The time was ${{ steps.hello.outputs.time }} when this ran"
+    - name: Test default action configuration
+      id: Test default action configuration
+      uses: ./
