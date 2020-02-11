@@ -12,3 +12,10 @@ jobs:
         uses: ./
         with:
           filname: "examples/README.md"
+      - name: Test custom awesome-lint version
+        id: custom-action-test
+        uses: ./
+        env:
+          VERSION: "0.11"
+        with:
+          filname: "examples/README.md"
