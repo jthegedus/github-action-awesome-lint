@@ -1,6 +1,6 @@
 name: "awesome-lint"
 description: "Lint your READMEs with sindresorhus' awesome-lint"
-author: "James Hegedus <james@jthegedus.com>
+author: "James Hegedus <james@jthegedus.com>"
 branding:
   icon: "eye"
   color: "green"
