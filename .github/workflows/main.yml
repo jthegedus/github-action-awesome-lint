@@ -10,3 +10,5 @@ jobs:
       - name: Test default action configuration
         id: default-action-test
         uses: ./
+        with:
+          filname: "examples/README.md"
