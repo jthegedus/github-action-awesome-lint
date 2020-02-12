@@ -99,13 +99,15 @@ jobs:
 
 ## Contributions
 
-[Contributions of any kind welcome, just follow the guidelines](contributing.md)!
+[Contributions of any kind welcome, just follow the guidelines](.github/contributing.md)!
 
 ### Contributors
 
 [Thanks goes to these contributors](https://github.com/jthegedus/github-action-awesome-lint/graphs/contributors)!
 
 ### Todo List
+
+After the below are complete we will cut a major semver release: `v1.0.0`.
 
 Repo:
 
@@ -114,6 +116,7 @@ Repo:
 - PR Template
 - Issue Template
 - ~~Contribution Guide~~
+- Release on GitHub Marketplace
 
 Tests:
 
