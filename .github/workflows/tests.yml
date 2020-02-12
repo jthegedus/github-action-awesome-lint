@@ -1,7 +1,7 @@
 on: [push]
 
 jobs:
-	test-custom-file:
+	test_custom_file:
 		name: "test: custom file"
 		runs-on: ubuntu-latest
 		steps:
@@ -12,7 +12,7 @@ jobs:
 				uses: ./
 				with:
 					args: "examples/readme.md"
-	test-custom-version:
+	test_custom_version:
 		name: "test: specific version of awesome-lint"
 		runs-on: ubuntu-latest
 		steps:
