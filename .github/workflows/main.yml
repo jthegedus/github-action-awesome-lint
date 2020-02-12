@@ -11,7 +11,7 @@ jobs:
         id: default-action-test
         uses: ./
         with:
-          filname: "examples/README.md"
+          args: "examples/README.md"
   test2:
     runs-on: ubuntu-latest
     name: Test awesome-lint GitHub Action w custom awesome-lint version 
@@ -24,4 +24,4 @@ jobs:
         env:
           AWESOME_LINT_VERSION: "0.11"
         with:
-          filname: "examples/README.md"
+          args: "examples/README.md"
