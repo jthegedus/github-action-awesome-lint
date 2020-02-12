@@ -6,7 +6,7 @@
 
 This Action wraps [`awesome-lint`](https://github.com/sindresorhus/awesome-lint/) allowing easy linting of your awesome projects!
 
-It allows specifying the version of the [`awesome-lint`](https://github.com/sindresorhus/awesome-lint/) package you wish to install from `npm`!
+For improved security and usage, it allows specifying the version of the [`awesome-lint`](https://github.com/sindresorhus/awesome-lint/) package you wish to install from `npm`! This is achieved by installing the dependency at runtime.
 
 </div>
 
