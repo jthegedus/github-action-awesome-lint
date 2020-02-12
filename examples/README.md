@@ -1,8 +1,10 @@
+<!--lint disable git-repo-age-->
+<!--lint disable contributing-->
+
 <div align="center">
 
 <!-- title -->
-
-# Awesome-list test template [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+# Awesome List Test Template [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 <!-- subtitle -->
 
@@ -52,7 +54,7 @@ Who else should we be following!?
 
 ### Contributors
 
-[Thanks goes to these contributors](https://github.com/jthegedus/githuv-action-awesome-lint/graphs/contributors)!
+[Thanks goes to these contributors](https://github.com/jthegedus/github-action-awesome-lint/graphs/contributors)!
 
 ## License
 
