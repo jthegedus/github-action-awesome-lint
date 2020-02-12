@@ -7,5 +7,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: test:shellcheck
+      - name: "lint: shellcheck"
         uses: fearphage/shellcheck-action@a369adbc362e5db9915df7fbfb17fb5003f23089
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
