@@ -11,7 +11,7 @@ jobs:
         id: default-action-test
         uses: ./
         with:
-          args: "examples/README.md"
+          args: "examples/readme.md"
   test-custom-version:
     name: Test custom version of awesome-lint 
     runs-on: ubuntu-latest
@@ -24,4 +24,4 @@ jobs:
         env:
           AWESOME_LINT_VERSION: "0.11"
         with:
-          args: "examples/README.md"
+          args: "examples/readme.md"

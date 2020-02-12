@@ -2,7 +2,7 @@
 
 # GitHub Action for Awesome Lint
 
-![.github/workflows/tests.yml](https://github.com/jthegedus/github-action-awesome-lint/workflows/.github/workflows/tests.yml/badge.svg) ![.github/workflows/lint.yml](https://github.com/jthegedus/github-action-awesome-lint/workflows/.github/workflows/lint.yml/badge.svg)
+[![Marketplace](https://img.shields.io/badge/GitHub-Marketplace-green.svg)](https://github.com/marketplace/actions/awesome-lint) [![Release](https://img.shields.io/github/release/jthegedus/github-action-awesome-lint.svg)](https://github.com/jthegedus/github-action-awesome-lint/releases) ![.github/workflows/tests.yml](https://github.com/jthegedus/github-action-awesome-lint/workflows/.github/workflows/tests.yml/badge.svg) ![.github/workflows/lint.yml](https://github.com/jthegedus/github-action-awesome-lint/workflows/.github/workflows/lint.yml/badge.svg)
 
 This Action wraps [`awesome-lint`](https://github.com/sindresorhus/awesome-lint/) allowing easy linting of your awesome projects!
 
@@ -103,16 +103,28 @@ Contributions are welcome! See Todo List below for areas to help with.
 
 ### Todo List
 
+Repo:
+
+- ~~Badges in readme~~
 - PR Template
 - Issue Template
 - Contribution Guide
-- Blog post about installing deps at runtime
+- Required PR Status Checks
+
+Tests:
+
 - Expected failure examples
 - Better GitHub Actions Annotations output
-- Runtime check for new version of Action being used with announcement log in usage
-- GitHub Actions template
-- Required PR Status Checks
 - Run Shellcheck over `entrypoint.sh`
+
+Functionality:
+
+- Runtime check for new version of Action being used with announcement log in usage
+
+Other:
+
+- Blog post about installing deps at runtime
+- GitHub Actions template
 
 ## License
 
