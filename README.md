@@ -1,8 +1,16 @@
+<div align="center">
+
 # GitHub Action for Awesome Lint
+
+![.github/workflows/tests.yml](https://github.com/jthegedus/github-action-awesome-lint/workflows/.github/workflows/tests.yml/badge.svg) ![.github/workflows/lint.yml](https://github.com/jthegedus/github-action-awesome-lint/workflows/.github/workflows/lint.yml/badge.svg)
 
 This Action wraps [`awesome-lint`](https://github.com/sindresorhus/awesome-lint/) allowing easy linting of your awesome projects!
 
-It allows specifying the version of the `awesome-lint` package you wish to install from `npm`!
+It allows specifying the version of the [`awesome-lint`](https://github.com/sindresorhus/awesome-lint/) package you wish to install from `npm`!
+
+</div>
+
+## Contents
 
 - [Inputs](#inputs)
 - [Environment Variables](#environment-variables)
