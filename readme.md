@@ -99,22 +99,26 @@ jobs:
 
 ## Contributions
 
-Contributions are welcome! See Todo List below for areas to help with.
+[Contributions of any kind welcome, just follow the guidelines](contributing.md)!
+
+### Contributors
+
+[Thanks goes to these contributors](https://github.com/jthegedus/github-action-awesome-lint/graphs/contributors)!
 
 ### Todo List
 
 Repo:
 
 - ~~Badges in readme~~
+- ~~Required PR Status Checks~~
 - PR Template
 - Issue Template
 - Contribution Guide
-- Required PR Status Checks
 
 Tests:
 
 - Expected failure examples
-- Better GitHub Actions Annotations output
+- Better GitHub Actions Annotations output - see https://developer.github.com/v3/checks/runs/#update-a-check-run
 - Run Shellcheck over `entrypoint.sh`
 
 Functionality:
