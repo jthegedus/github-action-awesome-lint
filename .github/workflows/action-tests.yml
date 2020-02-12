@@ -1,24 +1,24 @@
 on: [push]
 
 jobs:
-  test:
+  test-custom-file:
+    name: Test custom file
     runs-on: ubuntu-latest
-    name: Test awesome-lint GitHub Action
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Test default action configuration
+      - name: awesome-lint
         id: default-action-test
         uses: ./
         with:
           args: "examples/README.md"
-  test2:
+  test-custom-version:
+    name: Test custom version of awesome-lint 
     runs-on: ubuntu-latest
-    name: Test awesome-lint GitHub Action w custom awesome-lint version 
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Test custom awesome-lint version
+      - name: awesome-lint custom version
         id: custom-action-test
         uses: ./
         env:
