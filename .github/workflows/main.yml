@@ -22,6 +22,6 @@ jobs:
         id: custom-action-test
         uses: ./
         env:
-          VERSION: "0.11"
+          AWESOME_LINT_VERSION: "0.11"
         with:
           filname: "examples/README.md"
