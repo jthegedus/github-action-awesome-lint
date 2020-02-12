@@ -1,9 +1,9 @@
 #!/bin/sh
 
-set -euo pipefail
+set -euo
 
 echo "[INFO] Installing awesome-lint@${AWESOME_LINT_VERSION}"
-npm install -g awesome-lint@${AWESOME_LINT_VERSION}
+npm install -g awesome-lint@"${AWESOME_LINT_VERSION}"
 
 echo "[INFO] Executing:"
 echo "[INFO] awesome-lint $*"
