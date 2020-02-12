@@ -14,4 +14,4 @@ runs:
   using: "docker"
   image: "Dockerfile"
   env:
-    AWESOME_LINT_VERSION: ${{ inputs.version }}
+    AWESOME_LINT_VERSION: ${{ inputs.awesome-lint-version }}
