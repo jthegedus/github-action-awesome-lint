@@ -1,0 +1,27 @@
+on: [push]
+
+jobs:
+  test_custom_file:
+    name: "test: custom file"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: awesome-lint
+        id: action-test-default-latest-version
+        uses: ./
+        with:
+          args: "examples/readme.md"
+  test_custom_version:
+    name: "test: specific version of awesome-lint"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: awesome-lint custom version
+        id: action-test-custom-version
+        uses: ./
+        env:
+          AWESOME_LINT_VERSION: "0.11"
+        with:
+          args: "examples/readme.md"
