@@ -2,7 +2,8 @@
 
 set -euo pipefail
 
-echo "installing awesome-lint@${AWESOME_LINT_VERSION}"
+echo "[INFO] Installing awesome-lint@${AWESOME_LINT_VERSION}"
 npm install -g awesome-lint@${AWESOME_LINT_VERSION}
 
+echo "[INFO] awesome-lint $*"
 sh -c "awesome-lint $*"
