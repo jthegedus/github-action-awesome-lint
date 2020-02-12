@@ -113,18 +113,19 @@ Repo:
 - ~~Required PR Status Checks~~
 - PR Template
 - Issue Template
-- Contribution Guide
+- ~~Contribution Guide~~
 
 Tests:
 
 - Expected failure examples
 - Better GitHub Actions Annotations output - see https://developer.github.com/v3/checks/runs/#update-a-check-run
-- Run [Shellcheck](https://github.com/koalaman/shellcheck) over `entrypoint.sh`
+- ~~Run [Shellcheck](https://github.com/koalaman/shellcheck) over `entrypoint.sh`~~
 - Run [Dockerfile Lint](https://github.com/projectatomic/dockerfile_lint) over `dockerfile`
 
 Functionality:
 
 - Runtime check for new version of Action being used with announcement log in usage
+- Improved logging (find out how GitHub Actions performs highlighting and determine nice visual pattern to follow)
 
 Other:
 
