@@ -12,6 +12,6 @@ inputs:
     default: "latest"
 runs:
   using: "docker"
-  image: "Dockerfile"
+  image: "dockerfile"
   env:
     AWESOME_LINT_VERSION: ${{ inputs.awesome-lint-version }}
