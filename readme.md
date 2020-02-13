@@ -30,7 +30,7 @@ What I mean by _versionless_, is that this Action allows consumers to specify th
 <details>
 <summary><b>Why do this? What are the downsides?</b></summary>
 
-Pinning your Actions to a commit sha `d007f09bd2de33809fb3c0e43f8461d092d38970` is preferred to release numbers `v1.0.0` or branch names `master` as the code cannot change without you explicitly opting-in.
+Pinning your Actions to a commit sha `d007f09bd2de33809fb3c0e43f8461d092d38970` is preferred as it is considered more secure to pinning to release numbers `v1.0.0` or branch names `master` as the code cannot change without you explicitly opting-in.
 
 This design allows people to pin to a commit sha of this Action with the freedom to update the version of `awesome-lint` independently. This is not possible in an Action written in JavaScript, or with Docker build-time dependency installation.
 
