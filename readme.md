@@ -128,15 +128,6 @@ jobs:
 
 After the below are complete we will cut a major semver release: `v1.0.0`.
 
-Repo:
-
-- ~~Badges in readme~~
-- ~~Required PR Status Checks~~
-- ~~PR Template~~
-- ~~Issue Template~~
-- ~~Contribution Guide~~
-- Release on GitHub Marketplace
-
 Tests:
 
 - Expected failure examples
