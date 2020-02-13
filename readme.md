@@ -135,6 +135,10 @@ Other:
 - Blog post about installing deps at runtime
 - GitHub Actions template
 
+## Security
+
+[See our policy](.github/security.md)
+
 ## License
 
 [MIT License](./LICENSE)
