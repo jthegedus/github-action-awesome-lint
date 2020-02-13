@@ -63,7 +63,7 @@ jobs:
     awesome-lint:
       - name: Test awesome-lint
         id: custom-action-test
-        uses: jthegedus/github-action-awesome-lint
+        uses: jthegedus/github-action-awesome-lint@68fc989d5a01aa127ce502a59f72ebe4166386f1
 ```
 
 ### Custom File
@@ -77,7 +77,7 @@ jobs:
     awesome-lint:
       - name: Test awesome-lint with custom file path
         id: custom-action-test
-        uses: jthegedus/github-action-awesome-lint
+        uses: jthegedus/github-action-awesome-lint@68fc989d5a01aa127ce502a59f72ebe4166386f1
         with:
             args: "path/to/file.md
 ```
@@ -93,7 +93,7 @@ jobs:
     awesome-lint:
       - name: Test custom awesome-lint version
         id: custom-action-test
-        uses: jthegedus/github-action-awesome-lint
+        uses: jthegedus/github-action-awesome-lint@68fc989d5a01aa127ce502a59f72ebe4166386f1
         env:
             AWESOME_LINT_VERSION: "0.11"
 ```
@@ -109,7 +109,7 @@ jobs:
     awesome-lint:
       - name: Test custom awesome-lint version
         id: custom-action-test
-        uses: jthegedus/github-action-awesome-lint
+        uses: jthegedus/github-action-awesome-lint@68fc989d5a01aa127ce502a59f72ebe4166386f1
         env:
             AWESOME_LINT_VERSION: "0.11"
         with:
