@@ -1,17 +1,16 @@
 <div align="center">
 
-# GitHub Action for Awesome Lint
+# GitHub Action for Awesome Lint (Versionless)!
 
-[![Marketplace](https://img.shields.io/badge/GitHub-Marketplace-green.svg)](https://github.com/marketplace/actions/awesome-lint) [![Release](https://img.shields.io/github/release/jthegedus/github-action-awesome-lint.svg)](https://github.com/jthegedus/github-action-awesome-lint/releases) ![.github/workflows/tests.yml](https://github.com/jthegedus/github-action-awesome-lint/workflows/.github/workflows/tests.yml/badge.svg) ![.github/workflows/lint.yml](https://github.com/jthegedus/github-action-awesome-lint/workflows/.github/workflows/lint.yml/badge.svg)
+[![Marketplace](https://img.shields.io/badge/GitHub-Marketplace-green.svg)](https://github.com/marketplace/actions/awesome-lint-versionless) [![Release](https://img.shields.io/github/release/jthegedus/github-action-awesome-lint.svg)](https://github.com/jthegedus/github-action-awesome-lint/releases) ![.github/workflows/tests.yml](https://github.com/jthegedus/github-action-awesome-lint/workflows/.github/workflows/tests.yml/badge.svg) ![.github/workflows/lint.yml](https://github.com/jthegedus/github-action-awesome-lint/workflows/.github/workflows/lint.yml/badge.svg)
 
 This Action wraps [`awesome-lint`](https://github.com/sindresorhus/awesome-lint/) allowing easy linting of your awesome projects!
-
-For improved security and usage, it allows specifying the version of the [`awesome-lint`](https://github.com/sindresorhus/awesome-lint/) package you wish to install from `npm`! This is achieved by installing the dependency at runtime.
 
 </div>
 
 ## Contents
 
+- [Versionless](#versionless?)
 - [Inputs](#inputs)
 - [Environment Variables](#environment-variables)
 - [Example Usage](#example-usage)
@@ -21,7 +20,27 @@ For improved security and usage, it allows specifying the version of the [`aweso
     - [Specific `awesome-lint` Version with Custom File](#specific-awesome-lint-version-with-custom-file)
 - [Contributions](#contributions)
     - [Todo](#todo-list)
-- [License](License)
+- [Security](#security)
+- [License](#license)
+
+## Versionless?
+
+What I mean by _versionless_, is that this Action allows consumers to specify the version of the [`awesome-lint`](https://github.com/sindresorhus/awesome-lint/) package they desire.
+
+<details>
+<summary><b>Why do this? What are the downsides?</b></summary>
+
+Pinning your Actions to a commit sha `d007f09bd2de33809fb3c0e43f8461d092d38970` is preferred to release numbers `v1.0.0` or branch names `master` as the code cannot change without you explicitly opting-in.
+
+This design allows people to pin to a commit sha of this Action with the freedom to update the version of `awesome-lint` independently. This is not possible in an Action written in JavaScript, or with Docker build-time dependency installation.
+
+In my opinion, an Action that wraps an existing tool for consumption in GitHub Actions should only provide that convenience. And that convenience shouldn't require them to constantly be updating their usage. It does make updating the version of `awesome-lint` manual, but again, that is the more secure option to take.
+
+__Downsides?__
+
+`npm install` is performed at time of use. The Action still requires to be built with Docker, so even if the `npm install` was performed in the Dockerfile it wouldn't save the ~12 second `npm install` time. If the Action was reused, it would need to `npm install` on each use, even if the Docker image was cached. A small tradeoff if you ask me.
+
+</details>
 
 ## Inputs
 
@@ -113,8 +132,8 @@ Repo:
 
 - ~~Badges in readme~~
 - ~~Required PR Status Checks~~
-- PR Template
-- Issue Template
+- ~~PR Template~~
+- ~~Issue Template~~
 - ~~Contribution Guide~~
 - Release on GitHub Marketplace
 
