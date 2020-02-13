@@ -57,13 +57,20 @@ __Downsides?__
 `awesome-lint` CLI will automatically lint `README.md`:
 
 ```yaml
+name: Lint Awesome List
 on: [push]
 
 jobs:
-    awesome-lint:
-      - name: Test awesome-lint
-        id: custom-action-test
-        uses: jthegedus/github-action-awesome-lint@68fc989d5a01aa127ce502a59f72ebe4166386f1
+  awesome-lint:
+    name: "lint: awesome-lint"
+    runs-on: ubuntu-latest
+    steps:
+      - name: "checkout repo"
+        uses: actions/checkout@v2.0.0
+        with:
+          fetch-depth: 0
+      - name: Test awesome-lint with custom file path
+        uses: jthegedus/github-action-awesome-lint@68fc989d5a01aa127ce502a59f72ebe4166386f1 # commit_sha of tag v0.1.0
 ```
 
 ### Custom File
@@ -71,15 +78,22 @@ jobs:
 Specify the file to lint:
 
 ```yaml
+name: Lint Awesome List
 on: [push]
 
 jobs:
-    awesome-lint:
-      - name: Test awesome-lint with custom file path
-        id: custom-action-test
-        uses: jthegedus/github-action-awesome-lint@68fc989d5a01aa127ce502a59f72ebe4166386f1
+  awesome-lint:
+    name: "lint: awesome-lint"
+    runs-on: ubuntu-latest
+    steps:
+      - name: "checkout repo"
+        uses: actions/checkout@v2.0.0
         with:
-            args: "path/to/file.md
+          fetch-depth: 0
+      - name: Test awesome-lint with custom file path
+        uses: jthegedus/github-action-awesome-lint@68fc989d5a01aa127ce502a59f72ebe4166386f1 # commit_sha of tag v0.1.0
+        with:
+          args: "path/to/file.md
 ```
 
 ### Specific `awesome-lint` Version
@@ -87,15 +101,22 @@ jobs:
 Specify the `awesome-lint` package you wish to install from `npm`:
 
 ```yaml
+name: Lint Awesome List
 on: [push]
 
 jobs:
-    awesome-lint:
+  awesome-lint:
+    name: "lint: awesome-lint"
+    runs-on: ubuntu-latest
+    steps:
+      - name: "checkout repo"
+        uses: actions/checkout@v2.0.0
+        with:
+          fetch-depth: 0
       - name: Test custom awesome-lint version
-        id: custom-action-test
-        uses: jthegedus/github-action-awesome-lint@68fc989d5a01aa127ce502a59f72ebe4166386f1
+        uses: jthegedus/github-action-awesome-lint@68fc989d5a01aa127ce502a59f72ebe4166386f1 # commit_sha of tag v0.1.0
         env:
-            AWESOME_LINT_VERSION: "0.11"
+          AWESOME_LINT_VERSION: "0.11"
 ```
 
 ### Specific `awesome-lint` Version with Custom File
@@ -103,17 +124,24 @@ jobs:
 Combination of all custom values:
 
 ```yaml
+name: Lint Awesome List
 on: [push]
 
 jobs:
-    awesome-lint:
-      - name: Test custom awesome-lint version
-        id: custom-action-test
-        uses: jthegedus/github-action-awesome-lint@68fc989d5a01aa127ce502a59f72ebe4166386f1
-        env:
-            AWESOME_LINT_VERSION: "0.11"
+  awesome-lint:
+    name: "lint: awesome-lint"
+    runs-on: ubuntu-latest
+    steps:
+      - name: "checkout repo"
+        uses: actions/checkout@v2.0.0
         with:
-            args: "path/to/file.md"
+          fetch-depth: 0
+      - name: Test custom awesome-lint version
+        uses: jthegedus/github-action-awesome-lint@68fc989d5a01aa127ce502a59f72ebe4166386f1 # commit_sha of tag v0.1.0
+        env:
+          AWESOME_LINT_VERSION: "0.11"
+        with:
+          args: "path/to/file.md"
 ```
 
 ## Contributions
