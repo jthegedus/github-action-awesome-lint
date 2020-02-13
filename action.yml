@@ -1,5 +1,5 @@
-name: "awesome-lint"
-description: "Lint your READMEs with sindresorhus' awesome-lint"
+name: "awesome-lint versionless"
+description: "Lint your READMEs with sindresorhus' awesome-lint providing the specific package version"
 author: "James Hegedus <james@jthegedus.com>"
 branding:
   icon: "eye"
