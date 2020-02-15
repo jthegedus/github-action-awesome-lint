@@ -161,7 +161,7 @@ Tests:
 - Expected failure examples
 - Better GitHub Actions Annotations output - see https://developer.github.com/v3/checks/runs/#update-a-check-run
 - ~~Run [Shellcheck](https://github.com/koalaman/shellcheck) over `entrypoint.sh`~~
-- Run [Dockerfile Lint](https://github.com/projectatomic/dockerfile_lint) over `dockerfile`
+- Run [hadolint (Dockerfile Linter)](https://github.com/hadolint/hadolint) over `dockerfile`
 
 Functionality:
 
@@ -179,4 +179,4 @@ Other:
 
 ## License
 
-[MIT License](./LICENSE)
+[MIT License](./license)
