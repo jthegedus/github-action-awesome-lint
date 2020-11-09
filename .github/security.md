@@ -6,7 +6,7 @@ Security bugs are taken very seriously. Your efforts to responsibly disclose you
 
 **Do not open up a GitHub issue if the bug is a security vulnerability in the Action itself**.
 
-If you discover a security vulnerability, please report it to: security-github-actions-by@jthegedus.com
+If you discover a security vulnerability, please report it to: jthegedus@hey.com
 
 Bugs in dependent tools should be reported to their maintainers. We will update the dependency here once a patch is released.
 
