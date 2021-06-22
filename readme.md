@@ -1,5 +1,8 @@
 Deprecated, use `npx -y awesome-lint 'path/to/file.md'` instead.
 
+<details>
+    <summary>deprecated readme</summary>
+    
 <div align="center">
 
 # GitHub Action for Awesome Lint (Versionless)!
@@ -182,3 +185,5 @@ Other:
 ## License
 
 [MIT License](./license)
+
+</details>
