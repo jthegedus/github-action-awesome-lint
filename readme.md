@@ -1,3 +1,5 @@
+Deprecated, use `npx -y awesome-lint 'path/to/file.md'` instead.
+
 <div align="center">
 
 # GitHub Action for Awesome Lint (Versionless)!
